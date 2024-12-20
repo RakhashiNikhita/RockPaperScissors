@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.symbols{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+}
+
+.rock, .paper, .scissors{
+    height: 70px;
+    width: 70px;
+    border: 4px solid rgb(54, 53, 53);
+    border-radius: 50%;
+    background-size: cover;
+    margin: 5px;
+}
+
+.rock{
+    background-image: url("rock.png");
+}
+
+.paper{
+    background-image: url("paper.png");
+}
+
+.scissors{
+    background-image: url("scissors.png");
+}
+
+.rock:hover, .paper:hover, .scissors:hover{
+    border: 4px solid #B6025F;
+}
+
+@media(min-width:400px){
+    .rock, .paper, .scissors{
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+    }
+}
+
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score span{
+    margin: 0 20px;
+    font-size: 1.5rem;
+}
+
+p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px;
+}
